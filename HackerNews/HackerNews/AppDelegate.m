@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "StoryListTableViewController.h"
+#import "StoryListViewModel.h"
+#import "NewsServiceImpl.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +19,17 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    // Setup model
+    NewsServiceImpl *newsService = [NewsServiceImpl sharedManager];
+    
+    // Setup view model
+    StoryListViewModel *viewModel = [[StoryListViewModel alloc] initWithModel:newsService];
+    
+    // Setip view
+    UINavigationController *navController = (UINavigationController *)self.window.rootViewController;
+    StoryListTableViewController *controller = (StoryListTableViewController *)[navController topViewController];
+    controller.viewModel = viewModel;
+    
     return YES;
 }
 

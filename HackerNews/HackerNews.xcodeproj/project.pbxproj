@@ -17,6 +17,13 @@
 		0262BEEA20D8AE7000F6D3CA /* HackerNewsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0262BEE920D8AE7000F6D3CA /* HackerNewsTests.m */; };
 		0262BEF520D8AE7000F6D3CA /* HackerNewsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0262BEF420D8AE7000F6D3CA /* HackerNewsUITests.m */; };
 		0262BF0A20D8AFB300F6D3CA /* banner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0262BF0920D8AFB300F6D3CA /* banner.jpg */; };
+		0262BF0D20D8B42500F6D3CA /* StoryListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0262BF0C20D8B42500F6D3CA /* StoryListTableViewController.m */; };
+		0262BF1020D8B48300F6D3CA /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0262BF0F20D8B48300F6D3CA /* Utils.m */; };
+		0262BF1320D8B4B300F6D3CA /* Story.m in Sources */ = {isa = PBXBuildFile; fileRef = 0262BF1220D8B4B300F6D3CA /* Story.m */; };
+		0262BF1A20D8B57400F6D3CA /* AFHTTPRequestOperationManager+Synchronous.m in Sources */ = {isa = PBXBuildFile; fileRef = 0262BF1920D8B57400F6D3CA /* AFHTTPRequestOperationManager+Synchronous.m */; };
+		0262BF1D20D8B5C100F6D3CA /* NewsServiceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 0262BF1C20D8B5C100F6D3CA /* NewsServiceImpl.m */; };
+		0262BF2020D8B68C00F6D3CA /* StoryListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0262BF1F20D8B68C00F6D3CA /* StoryListViewModel.m */; };
+		0262BF2320D8B9D600F6D3CA /* StoryListViewModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0262BF2220D8B9D600F6D3CA /* StoryListViewModelTests.m */; };
 		929AED6312BF6A521E4F6D08 /* libPods-HackerNewsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB2B4B1737E9D446B64759B /* libPods-HackerNewsTests.a */; };
 		9D94C8EED15232625F42D9FA /* libPods-HackerNewsUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0BF895D702B22A62BCD1DB /* libPods-HackerNewsUITests.a */; };
 		FA719011FBC667EF6E4F9725 /* libPods-HackerNews.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 696F8B734808580477483DDC /* libPods-HackerNews.a */; };
@@ -58,6 +65,20 @@
 		0262BEF420D8AE7000F6D3CA /* HackerNewsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HackerNewsUITests.m; sourceTree = "<group>"; };
 		0262BEF620D8AE7000F6D3CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0262BF0920D8AFB300F6D3CA /* banner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = banner.jpg; path = ../../../../HackerNewsReader/HackerNews/HackerNews/Resources/Images/banner.jpg; sourceTree = "<group>"; };
+		0262BF0B20D8B42500F6D3CA /* StoryListTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoryListTableViewController.h; sourceTree = "<group>"; };
+		0262BF0C20D8B42500F6D3CA /* StoryListTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoryListTableViewController.m; sourceTree = "<group>"; };
+		0262BF0E20D8B48300F6D3CA /* Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		0262BF0F20D8B48300F6D3CA /* Utils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		0262BF1120D8B4B300F6D3CA /* Story.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Story.h; sourceTree = "<group>"; };
+		0262BF1220D8B4B300F6D3CA /* Story.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Story.m; sourceTree = "<group>"; };
+		0262BF1420D8B4FF00F6D3CA /* NewsService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsService.h; sourceTree = "<group>"; };
+		0262BF1820D8B57400F6D3CA /* AFHTTPRequestOperationManager+Synchronous.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AFHTTPRequestOperationManager+Synchronous.h"; sourceTree = "<group>"; };
+		0262BF1920D8B57400F6D3CA /* AFHTTPRequestOperationManager+Synchronous.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AFHTTPRequestOperationManager+Synchronous.m"; sourceTree = "<group>"; };
+		0262BF1B20D8B5C100F6D3CA /* NewsServiceImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NewsServiceImpl.h; path = HackerNews/Model/NewsServiceImpl.h; sourceTree = SOURCE_ROOT; };
+		0262BF1C20D8B5C100F6D3CA /* NewsServiceImpl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = NewsServiceImpl.m; path = HackerNews/Model/NewsServiceImpl.m; sourceTree = SOURCE_ROOT; };
+		0262BF1E20D8B68C00F6D3CA /* StoryListViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoryListViewModel.h; sourceTree = "<group>"; };
+		0262BF1F20D8B68C00F6D3CA /* StoryListViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoryListViewModel.m; sourceTree = "<group>"; };
+		0262BF2220D8B9D600F6D3CA /* StoryListViewModelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoryListViewModelTests.m; sourceTree = "<group>"; };
 		3544CAED99C27C2367C388BF /* Pods-HackerNewsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackerNewsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackerNewsTests/Pods-HackerNewsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		696F8B734808580477483DDC /* libPods-HackerNews.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HackerNews.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A8D9C4AB31FC54950D0EEC0 /* Pods-HackerNewsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackerNewsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackerNewsTests/Pods-HackerNewsTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -129,6 +150,7 @@
 				0262BF0420D8AE9200F6D3CA /* Model */,
 				0262BF0620D8AEB300F6D3CA /* CoreData */,
 				0262BF0720D8AEEE00F6D3CA /* Utils */,
+				0262BF1720D8B54500F6D3CA /* Networking */,
 				0262BF0820D8AF8500F6D3CA /* Resources */,
 				0262BED320D8AE6F00F6D3CA /* Main.storyboard */,
 				0262BED920D8AE7000F6D3CA /* Assets.xcassets */,
@@ -143,6 +165,7 @@
 		0262BEE820D8AE7000F6D3CA /* HackerNewsTests */ = {
 			isa = PBXGroup;
 			children = (
+				0262BF2120D8B9B800F6D3CA /* ViewModels */,
 				0262BEE920D8AE7000F6D3CA /* HackerNewsTests.m */,
 				0262BEEB20D8AE7000F6D3CA /* Info.plist */,
 			);
@@ -163,6 +186,8 @@
 			children = (
 				0262BED020D8AE6F00F6D3CA /* ViewController.h */,
 				0262BED120D8AE6F00F6D3CA /* ViewController.m */,
+				0262BF0B20D8B42500F6D3CA /* StoryListTableViewController.h */,
+				0262BF0C20D8B42500F6D3CA /* StoryListTableViewController.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -170,6 +195,8 @@
 		0262BF0320D8AE8500F6D3CA /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				0262BF1E20D8B68C00F6D3CA /* StoryListViewModel.h */,
+				0262BF1F20D8B68C00F6D3CA /* StoryListViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -178,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				0262BF0520D8AEA200F6D3CA /* ModelObjects */,
+				0262BF1420D8B4FF00F6D3CA /* NewsService.h */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -185,6 +213,10 @@
 		0262BF0520D8AEA200F6D3CA /* ModelObjects */ = {
 			isa = PBXGroup;
 			children = (
+				0262BF1120D8B4B300F6D3CA /* Story.h */,
+				0262BF1220D8B4B300F6D3CA /* Story.m */,
+				0262BF1B20D8B5C100F6D3CA /* NewsServiceImpl.h */,
+				0262BF1C20D8B5C100F6D3CA /* NewsServiceImpl.m */,
 			);
 			path = ModelObjects;
 			sourceTree = "<group>";
@@ -199,6 +231,8 @@
 		0262BF0720D8AEEE00F6D3CA /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				0262BF0E20D8B48300F6D3CA /* Utils.h */,
+				0262BF0F20D8B48300F6D3CA /* Utils.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -209,6 +243,23 @@
 				0262BF0920D8AFB300F6D3CA /* banner.jpg */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		0262BF1720D8B54500F6D3CA /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				0262BF1820D8B57400F6D3CA /* AFHTTPRequestOperationManager+Synchronous.h */,
+				0262BF1920D8B57400F6D3CA /* AFHTTPRequestOperationManager+Synchronous.m */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		0262BF2120D8B9B800F6D3CA /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				0262BF2220D8B9D600F6D3CA /* StoryListViewModelTests.m */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		953746A833A9177F4DCE8F2A /* Frameworks */ = {
@@ -425,9 +476,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0262BF2020D8B68C00F6D3CA /* StoryListViewModel.m in Sources */,
+				0262BF1A20D8B57400F6D3CA /* AFHTTPRequestOperationManager+Synchronous.m in Sources */,
 				0262BED220D8AE6F00F6D3CA /* ViewController.m in Sources */,
+				0262BF0D20D8B42500F6D3CA /* StoryListTableViewController.m in Sources */,
 				0262BED820D8AE6F00F6D3CA /* HackerNews.xcdatamodeld in Sources */,
+				0262BF1020D8B48300F6D3CA /* Utils.m in Sources */,
 				0262BEE020D8AE7000F6D3CA /* main.m in Sources */,
+				0262BF1D20D8B5C100F6D3CA /* NewsServiceImpl.m in Sources */,
+				0262BF1320D8B4B300F6D3CA /* Story.m in Sources */,
 				0262BECF20D8AE6F00F6D3CA /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -436,6 +493,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0262BF2320D8B9D600F6D3CA /* StoryListViewModelTests.m in Sources */,
 				0262BEEA20D8AE7000F6D3CA /* HackerNewsTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -599,6 +657,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = HackerNews/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -616,6 +675,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = HackerNews/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
