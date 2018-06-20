@@ -18,6 +18,9 @@
 @property (strong, nonatomic) NSString *title;
 @property (strong, nonatomic) NSURL *url;
 
+@property (assign, nonatomic) BOOL read;
+@property (strong, nonatomic) NSString *note;
+
 - (instancetype)initWithAPIResponse:(NSDictionary *)response;
 
 - (instancetype)initWithId:(NSInteger)storyId

@@ -14,15 +14,17 @@
 
 @property (strong, nonatomic) NewsServiceImpl *newsService;
 @property (strong, nonatomic) NSMutableArray *stories;
+@property (strong, nonatomic) DataStoreImpl *dataStore;
 
 @end
 
 
 @implementation StoryListViewModel
 
-- (instancetype)initWithModel:(NewsServiceImpl *)newsService {
+- (instancetype)initWithModel:(NewsServiceImpl *)newsService dataStore:(DataStoreImpl *)dateStore {
     if (self = [super init]) {
         _newsService = newsService;
+        _dataStore = dateStore;
         _stories = [[NSMutableArray alloc] init];
         
         RAC(self, stories) = [[newsService topStoriesSync] startWith:@[]];
@@ -55,7 +57,18 @@
 }
 
 - (UIColor *)textColorOfStoryAtRow:(NSInteger)row {
+    Story *aStory = self.stories[row];
+    if (aStory.read  || [self.dataStore getReadStateForStory:aStory.identifier])
+        return [UIColor lightGrayColor];
     return [UIColor darkTextColor];
+}
+
+- (StoryViewModel *)storyViewModelForRow:(NSInteger)row {
+    Story *aStory = self.stories[row];
+    aStory.read = YES;
+    [self.dataStore saveStoryWithId:aStory.identifier];
+    StoryViewModel *viewModel = [[StoryViewModel alloc] initWithStory:aStory];
+    return viewModel;
 }
 
 @end

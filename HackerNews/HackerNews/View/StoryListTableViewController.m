@@ -7,6 +7,8 @@
 //
 
 #import "StoryListTableViewController.h"
+#import "StoryViewController.h"
+#import "StoryViewModel.h"
 
 @interface StoryListTableViewController ()
 
@@ -56,14 +58,13 @@
     return cell;
 }
 
-/*
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+    StoryViewController *viewController = segue.destinationViewController;
+    viewController.viewModel = [self.viewModel storyViewModelForRow:indexPath.row];
+    [self.tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationNone];
 }
-*/
 
 @end

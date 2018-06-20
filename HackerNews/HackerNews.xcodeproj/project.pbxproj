@@ -24,6 +24,12 @@
 		0262BF1D20D8B5C100F6D3CA /* NewsServiceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 0262BF1C20D8B5C100F6D3CA /* NewsServiceImpl.m */; };
 		0262BF2020D8B68C00F6D3CA /* StoryListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0262BF1F20D8B68C00F6D3CA /* StoryListViewModel.m */; };
 		0262BF2320D8B9D600F6D3CA /* StoryListViewModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0262BF2220D8B9D600F6D3CA /* StoryListViewModelTests.m */; };
+		0262BF2620DA467C00F6D3CA /* StoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0262BF2520DA467C00F6D3CA /* StoryViewController.m */; };
+		0262BF2920DA469A00F6D3CA /* StoryViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0262BF2820DA469A00F6D3CA /* StoryViewModel.m */; };
+		0262BF2C20DA46B100F6D3CA /* StoryObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0262BF2B20DA46B100F6D3CA /* StoryObject.m */; };
+		0262BF3220DA46F000F6D3CA /* DataStoreImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 0262BF3120DA46F000F6D3CA /* DataStoreImpl.m */; };
+		0262BF3420DA51B700F6D3CA /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0262BF3320DA51B700F6D3CA /* WebKit.framework */; };
+		0262BF3620DA52EE00F6D3CA /* StoryViewModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0262BF3520DA52EE00F6D3CA /* StoryViewModelTests.m */; };
 		929AED6312BF6A521E4F6D08 /* libPods-HackerNewsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB2B4B1737E9D446B64759B /* libPods-HackerNewsTests.a */; };
 		9D94C8EED15232625F42D9FA /* libPods-HackerNewsUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0BF895D702B22A62BCD1DB /* libPods-HackerNewsUITests.a */; };
 		FA719011FBC667EF6E4F9725 /* libPods-HackerNews.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 696F8B734808580477483DDC /* libPods-HackerNews.a */; };
@@ -79,6 +85,17 @@
 		0262BF1E20D8B68C00F6D3CA /* StoryListViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoryListViewModel.h; sourceTree = "<group>"; };
 		0262BF1F20D8B68C00F6D3CA /* StoryListViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoryListViewModel.m; sourceTree = "<group>"; };
 		0262BF2220D8B9D600F6D3CA /* StoryListViewModelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoryListViewModelTests.m; sourceTree = "<group>"; };
+		0262BF2420DA467C00F6D3CA /* StoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoryViewController.h; sourceTree = "<group>"; };
+		0262BF2520DA467C00F6D3CA /* StoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoryViewController.m; sourceTree = "<group>"; };
+		0262BF2720DA469A00F6D3CA /* StoryViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoryViewModel.h; sourceTree = "<group>"; };
+		0262BF2820DA469A00F6D3CA /* StoryViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoryViewModel.m; sourceTree = "<group>"; };
+		0262BF2A20DA46B100F6D3CA /* StoryObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoryObject.h; sourceTree = "<group>"; };
+		0262BF2B20DA46B100F6D3CA /* StoryObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoryObject.m; sourceTree = "<group>"; };
+		0262BF2D20DA46CE00F6D3CA /* DataStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataStore.h; sourceTree = "<group>"; };
+		0262BF3020DA46F000F6D3CA /* DataStoreImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataStoreImpl.h; sourceTree = "<group>"; };
+		0262BF3120DA46F000F6D3CA /* DataStoreImpl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataStoreImpl.m; sourceTree = "<group>"; };
+		0262BF3320DA51B700F6D3CA /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		0262BF3520DA52EE00F6D3CA /* StoryViewModelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoryViewModelTests.m; sourceTree = "<group>"; };
 		3544CAED99C27C2367C388BF /* Pods-HackerNewsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackerNewsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackerNewsTests/Pods-HackerNewsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		696F8B734808580477483DDC /* libPods-HackerNews.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HackerNews.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A8D9C4AB31FC54950D0EEC0 /* Pods-HackerNewsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackerNewsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackerNewsTests/Pods-HackerNewsTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -95,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0262BF3420DA51B700F6D3CA /* WebKit.framework in Frameworks */,
 				FA719011FBC667EF6E4F9725 /* libPods-HackerNews.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -157,7 +175,6 @@
 				0262BEDB20D8AE7000F6D3CA /* LaunchScreen.storyboard */,
 				0262BEDE20D8AE7000F6D3CA /* Info.plist */,
 				0262BEDF20D8AE7000F6D3CA /* main.m */,
-				0262BED620D8AE6F00F6D3CA /* HackerNews.xcdatamodeld */,
 			);
 			path = HackerNews;
 			sourceTree = "<group>";
@@ -188,6 +205,8 @@
 				0262BED120D8AE6F00F6D3CA /* ViewController.m */,
 				0262BF0B20D8B42500F6D3CA /* StoryListTableViewController.h */,
 				0262BF0C20D8B42500F6D3CA /* StoryListTableViewController.m */,
+				0262BF2420DA467C00F6D3CA /* StoryViewController.h */,
+				0262BF2520DA467C00F6D3CA /* StoryViewController.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -197,6 +216,8 @@
 			children = (
 				0262BF1E20D8B68C00F6D3CA /* StoryListViewModel.h */,
 				0262BF1F20D8B68C00F6D3CA /* StoryListViewModel.m */,
+				0262BF2720DA469A00F6D3CA /* StoryViewModel.h */,
+				0262BF2820DA469A00F6D3CA /* StoryViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -224,6 +245,12 @@
 		0262BF0620D8AEB300F6D3CA /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				0262BED620D8AE6F00F6D3CA /* HackerNews.xcdatamodeld */,
+				0262BF2A20DA46B100F6D3CA /* StoryObject.h */,
+				0262BF2B20DA46B100F6D3CA /* StoryObject.m */,
+				0262BF2D20DA46CE00F6D3CA /* DataStore.h */,
+				0262BF3020DA46F000F6D3CA /* DataStoreImpl.h */,
+				0262BF3120DA46F000F6D3CA /* DataStoreImpl.m */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -258,6 +285,7 @@
 			isa = PBXGroup;
 			children = (
 				0262BF2220D8B9D600F6D3CA /* StoryListViewModelTests.m */,
+				0262BF3520DA52EE00F6D3CA /* StoryViewModelTests.m */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -265,6 +293,7 @@
 		953746A833A9177F4DCE8F2A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0262BF3320DA51B700F6D3CA /* WebKit.framework */,
 				696F8B734808580477483DDC /* libPods-HackerNews.a */,
 				EAB2B4B1737E9D446B64759B /* libPods-HackerNewsTests.a */,
 				AB0BF895D702B22A62BCD1DB /* libPods-HackerNewsUITests.a */,
@@ -476,6 +505,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0262BF2920DA469A00F6D3CA /* StoryViewModel.m in Sources */,
+				0262BF3220DA46F000F6D3CA /* DataStoreImpl.m in Sources */,
+				0262BF2620DA467C00F6D3CA /* StoryViewController.m in Sources */,
 				0262BF2020D8B68C00F6D3CA /* StoryListViewModel.m in Sources */,
 				0262BF1A20D8B57400F6D3CA /* AFHTTPRequestOperationManager+Synchronous.m in Sources */,
 				0262BED220D8AE6F00F6D3CA /* ViewController.m in Sources */,
@@ -486,6 +518,7 @@
 				0262BF1D20D8B5C100F6D3CA /* NewsServiceImpl.m in Sources */,
 				0262BF1320D8B4B300F6D3CA /* Story.m in Sources */,
 				0262BECF20D8AE6F00F6D3CA /* AppDelegate.m in Sources */,
+				0262BF2C20DA46B100F6D3CA /* StoryObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,6 +526,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0262BF3620DA52EE00F6D3CA /* StoryViewModelTests.m in Sources */,
 				0262BF2320D8B9D600F6D3CA /* StoryListViewModelTests.m in Sources */,
 				0262BEEA20D8AE7000F6D3CA /* HackerNewsTests.m in Sources */,
 			);

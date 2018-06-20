@@ -9,16 +9,20 @@
 #import <Foundation/Foundation.h>
 #import <ReactiveCocoa/ReactiveCocoa.h>
 #import "NewsServiceImpl.h"
+#import "StoryViewModel.h"
+#import "DataStoreImpl.h"
 
 @interface StoryListViewModel : NSObject
 
 @property (nonatomic, readonly) RACSignal *hasUpdatedContent;
 
-- (instancetype)initWithModel:(NewsServiceImpl *)newsService;
+- (instancetype)initWithModel:(NewsServiceImpl *)newsService dataStore:(DataStoreImpl *)dateStore;
 - (NSString *)title;
 - (NSInteger)numberOfStory;
 - (NSString *)titleOfStoryAtRow:(NSInteger)row;
 - (NSString *)infoOfStoryAtRow:(NSInteger)row;
 - (UIColor *)textColorOfStoryAtRow:(NSInteger)row;
+
+- (StoryViewModel *)storyViewModelForRow:(NSInteger)row;
 
 @end
